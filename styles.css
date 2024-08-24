@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+body {
+  background-color: #269fcf4f;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 40px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+#city {
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 300px;
+}
+#city:focus {
+  outline: 4px solid rgba(104, 255, 162, 0.479);
+}
+#get-weather {
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #269fcf;
+  color: #fff;
+  cursor: pointer;
+}
+#get-weather:hover {
+  background-color: rgba(13, 163, 71, 0.479);
+  color: white;
+}
+#info {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+#info div {
+  width: 90%;
+  padding: 20px;
+  border: 2px solid #0000004b;
+  box-shadow: 0 0 10px #00000062;
+  border-radius: 10px;
+  background-image: linear-gradient(#ffffff8a, #00e1ff62);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+#info h2 {
+  color: #044604;
+  font-size: 30px;
+  grid-column: 1/-1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#info h3 {
+  color: #aa2929;
+  font-size: 17px;
+}
+#info p {
+  color: rgb(71, 71, 71);
+  font-size: 17px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+  #city {
+    width: 200px;
+    font-size: 17px;
+  }
+  #get-weather {
+    width: 100px;
+    font-size: 14px;
+  }
+  #info div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #info h2 {
+    font-size: 30px;
+  }
+  #info p {
+    font-size: 17px;
+  }
+}
+@media (min-width: 970px) {
+  h1 {
+    font-size: 50px;
+  }
+  #city {
+    width: 400px;
+    font-size: 20px;
+  }
+  #get-weather {
+    width: 150px;
+    font-size: 20px;
+  }
+  #info div {
+    width: 99%;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  #info h2 {
+    font-size: 40px;
+  }
+  #info h3 {
+    font-size: 19px;
+  }
+  #info p {
+    font-size: 19px;
+  }
+}
